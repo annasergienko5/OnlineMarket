@@ -10,9 +10,6 @@ import school.yandex.annasergienko.entity.Offer;
 import java.util.ArrayList;
 
 public interface OfferRepository extends JpaRepository<Offer, String> {
-    @Transactional
-    @Query(value = "select parent_id from offer where id = :id", nativeQuery = true)
-    String selectParentId(@Param("id") String id);
 
     Offer findEntityById(String id);
 

@@ -30,7 +30,7 @@ public class Category {
     private String parentId;
 
     @Column(name = "price")
-    private int price;
+    private Integer price;
 
     @Column(name = "updateDate")
     private String updateDate;

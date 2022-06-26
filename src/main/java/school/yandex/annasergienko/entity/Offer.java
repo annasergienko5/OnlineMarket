@@ -31,7 +31,7 @@ public class Offer {
     private Category category;
 
     @Column(name = "price")
-    private int price;
+    private Integer price;
 
     @Column(name = "updateDate")
     private String updateDate;
