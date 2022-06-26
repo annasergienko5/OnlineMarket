@@ -1,13 +1,12 @@
 server:
-  address:
-  port:
+  port: 80
 spring:
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
   datasource:
-    url:
-    username:
-    password:
-    driver-class-name:
+    url: jdbc:postgresql://data:5432/postgres
+    username: postgres
+    password: mysecretpassword
+    driver-class-name: org.postgresql.Driver
